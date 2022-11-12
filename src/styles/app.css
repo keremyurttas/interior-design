@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-secondary leading-normal;
+}
+
+p,
+span,
+small {
+  @apply text-light leading-normal;
+}
+.brand-container {
+  @apply container mx-auto max-w-[1200px] px-4 md:px-8 lg:px-0;
+}
+.statistic-card p {
+  @apply text-white;
+}
+.brand-button {
+  @apply px-8 py-3 bg-primary text-white;
+}
+.brand-custom-title {
+  @apply flex uppercase text-black font-medium items-center mb-5 after:content-[''] after:inline-flex after:w-[530px] after:h-[2px] after:bg-black after:ml-4;
+}
