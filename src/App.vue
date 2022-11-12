@@ -69,7 +69,9 @@
           </p>
           <button class="brand-button">Learn More</button>
         </div>
-        <div class="bg-white px-5 py-4 flex items-center space-x-5 absolute top-7 right-44">
+        <div
+          class="bg-white px-5 py-4 flex items-center space-x-5 absolute top-7 right-44"
+        >
           <img src="./assets/avatar.svg" alt="aba" />
           <div>
             <p>Arga Danaan</p>
