@@ -1,5 +1,5 @@
 <template>
-  <main class="brand-container pt-10 pb-96">
+  <main class="brand-container pt-10 pb-20">
     <header class="flex items-center justify-between mb-24">
       <a href="#" class="logo">
         <img
@@ -147,22 +147,93 @@
         <li
           v-for="(item, index) in themeNav"
           :class="{ 'mb-10': !item.last }"
-          class="flex justify-between hover:cursor-pointer "
+          class="flex justify-between hover:cursor-pointer"
         >
           <div class="flex text-3xl font-semibold space-x-5 md:space-x-20">
             <span class=""> 0{{ index + 1 }} </span>
             <div class="">
               <h4 class="mb-6">{{ item.header }}</h4>
-              <p class="text-lg font-normal  max-w-[470px]">
+              <p class="text-lg font-normal max-w-[470px]">
                 the use of simple and limited elements to get the best effect or
                 impression.
               </p>
             </div>
           </div>
-          <button><img class="w-8 h-8" src="./assets/arrow-right.png" alt="" /></button>
+          <button>
+            <img class="w-8 h-8" src="./assets/arrow-right.png" alt="" />
+          </button>
         </li>
       </ul>
     </section>
+    <section class="relative lg:mb-30 h-[490px] mb-64">
+      <p class="brand-custom-title">material</p>
+      <h2 class="brand-custom-header lg:max-w-[26%]">
+        choice of materials for quality furniture.
+      </h2>
+      <p class="text-lg font-normal text-light lg:max-w-[40%] mb-6">
+        You can custom the material as desired. And our furniture uses the best
+        materials and selected quality materials.
+      </p>
+      <button class="px-8 py-3 border border-secondary mb-4 lg:mb-0">
+        See Materials
+      </button>
+      <img
+        width="623"
+        height="490"
+        class="lg:absolute lg:right-0 lg:top-[-47px] relative"
+        src="./assets/image-group.svg"
+        alt=""
+      />
+    </section>
+    <section class="bg-primary py-9 relative mb-20">
+      <div class="md:flex w-full">
+        <h2
+          class="brand-custom-header text-white md:min-w-[55%] mr-40 mb-6 md:mb-0"
+        >
+          let's discuss making your interior like a dream place!
+        </h2>
+        <div class="w-full">
+          <p class="mb-5 text-lightGray font-lg md:min-w-[70%]">
+            Contact us below to work together to build your amazing interior
+          </p>
+          <button class="bg-white text-secondary py-3 px-8">
+            <a class="text-sm font-medium" href="#">Contact Us</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="sm:flex justify-between relative">
+      <div class="max-w-[40%] mb-4 sm:mb-0">
+        <img src="./assets/logo.svg" alt="" />
+        <h3 class="brand-custom-header">One of the best furniture agency.</h3>
+      </div>
+      <div class="relative">
+        <div class="flex items-center gap-x-7 mb-10">
+          <div class="">
+            <div class="mb-6 flex items-center">
+              <img class="mr-2.5" src="./assets/Ellipse74.png" alt="" />
+              <span class="font-normal text-lg text-secondary"
+                >Enter your email to get the latest news</span
+              >
+            </div>
+            <input placeholder="Email Adress" type="text" class="mb-4" />
+            <div class="line w-[115%] bg-[#141414] h-[1px]"></div>
+          </div>
+          <button>
+            <img src="./assets/half-arrow.png" alt="" />
+          </button>
+        </div>
+        <div class=" sm:absolute right-0">
+          <span class="text-secondary mb-4">Follow us On</span>
+          <div class="flex gap-x-8">
+            <img src="./assets/facebook.svg" alt="" />
+            <img src="./assets/instagram.svg" alt="" />
+            <img src="./assets/tiktok.svg" alt="" />
+            <img src="./assets/youtube.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </template>
 
